@@ -1,0 +1,43 @@
+audio{
+    width: 1200px;
+    position:relative;
+    color: aqua;
+}
+body{
+    background-color: bisque;
+}
+#db{
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+}
+#sk{
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 70px;
+}
+#dongbai,#sunkainiubi,#shediao,#wbds{
+    text-align: center;
+}
+#dongbai_qu{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-radius: 50px;
+    position: absolute;
+    left: 500px;
+}
+#sunkai_qu{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 500px;
+    top: 150px;
+}
