@@ -1,38 +1,15 @@
 html{
-    min-width: 1000px;
+    min-width: 800px;
     height: 100%;
     width: 100%;
 }
 body{
     height: 100%;
     width: 100%;
-    background-color: rgb(135, 206, 250);
+    background-image: url(../resource/background.jpg);
+    background-size:cover;
 }
-#welcome{
-color:black;
-font-size: 40px;
-text-align: center;
-width: 100%;
-height: 20%;
-letter-spacing: 10px;
-}
-h1{
-    font-style: "黑体";
-}
-#logo{
-    width: 120px;
-    height: 120px;
-    float: left;
-    margin: 0;
-    padding: 0;
-    border-radius: 15px;
-    position: relative;
-    left: 230px;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
+
 #content{
     width: 100%;
 }
@@ -41,28 +18,65 @@ a{
     border-spacing: 40px;
 }
 #table_1 td{
-    font-size:40px;
-    border: 5px solid yellow;
+    font-size:20px;
+    border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
 }
-marquee{
-    font-size: 30px;
-    font-family: '楷体';
-    color: aliceblue;
+a{
+    text-decoration: none;
+    color:white;
 }
+
+#table_2{
+    width: 100%;
+    text-align: center;
+}
+#welcome{
+    color:black;
+    font-size: 30px;
+    letter-spacing: 50px;
+    -webkit-animation: flicker 3s infinite; 
+    font-style: "楷体";
+    color: gold;
+ }
+ @-webkit-keyframes flicker{                    /*创建动画*/
+     0%{opacity: 1;}
+     50%{opacity: 0.2;}
+     100%{opacity: 1;}
+ }
+
+#logo{
+    width: 80px;
+    border-radius: 15px;
+}
+
 #login{
 position: absolute;
 right: 0;
 font-size: 15px;
 }
+
+
 p{
     font-size: 30px;
+    color: bisque;
 }
 ol{
     font-size: 20px;
+    color: bisque;
 }
+
+
 footer{
     font-size: 15px;
     bottom: 0;
+}
+foot{
+    text-align: center;
+}
+marquee{
+    font-size: 30px;
+    font-family: '楷体';
+    color: violet;
 }
