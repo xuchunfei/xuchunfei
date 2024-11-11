@@ -8,21 +8,17 @@ table{
     border-spacing: 40px;
 }
 #music a{
-    font-size: 30px;
+    font-size: 50px;
     text-decoration: none;
     color: rgb(146, 182, 213);
     font-family: "楷体";
 }
 #dongbai_qu{
-    width: 50px;
-    height: 50px;
-    margin: 0;
-    padding: 0;
     border-radius: 50px;
 }
-#sunkai_qu{
-    width: 50px;
-    height: 50px;
+#sunkai_qu,#dongbai_qu{
+    width: 60px;
+    height: 60px;
     margin: 0;
     padding: 0;
 }
