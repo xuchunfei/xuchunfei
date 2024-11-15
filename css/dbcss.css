@@ -1,14 +1,5 @@
-img{
-    width: 900px;
-    height: 1200px;
-    border-radius: 50px;
+*{
+    margin: 0;
+    padding:0;
 }
-audio{
-    width: 100%;
-    position:fixed;
-    left: 0;
-    bottom: 0;
-}
-body{
-    background-color:rgb(135, 206, 250);
-}
+

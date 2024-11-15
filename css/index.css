@@ -1,32 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 html{
     min-width: 800px;
-    height: 100%;
-    width: 100%;
 }
+
 body{
     height: 100%;
     width: 100%;
-    background-image: url(../resource/background.jpg);
-    background-size:cover;
+    background-color: black;
 }
 
 #content{
+    text-align: center;
     width: 100%;
+    background-color: rgb(255, 153, 0);
+    padding: 15px;
 }
-#table_1{
-    border-collapse: separate;
-    border-spacing: 40px;
+
+#menu{
+    list-style: none;
+    height: 40px;
+    position: relative;
+    font-family: "宋体";
+    display:inline-block;
 }
-#table_1 td{
-    font-size:20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
+
+#menu li{
+    display: block;
+    float: left;
+    position:relative;
+    margin-left: 30px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: white;
 }
-a{
+#menu li a{
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 33px;
+    color: black;
     text-decoration: none;
-    color:white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
+#menu li a:hover{
+background-color: white;
+}
+
+
 
 #table_2{
     width: 100%;
@@ -38,7 +64,7 @@ a{
     letter-spacing: 50px;
     -webkit-animation: flicker 3s infinite; 
     font-style: "楷体";
-    color: gold;
+    color: white;
  }
  @-webkit-keyframes flicker{                    /*创建动画*/
      0%{opacity: 1;}
@@ -58,25 +84,60 @@ font-size: 15px;
 }
 
 
-p{
-    font-size: 30px;
-    color: bisque;
-}
-ol{
-    font-size: 20px;
-    color: bisque;
-}
-
-
 footer{
+    position: fixed;
     font-size: 15px;
     bottom: 0;
-}
-foot{
+    color:rgb(255, 153, 0) ;
     text-align: center;
 }
+
 marquee{
     font-size: 30px;
     font-family: '楷体';
-    color: violet;
+    color:rgb(255, 153, 0);
+}
+
+#intro{
+    position: absolute;
+    width: 33%;
+    height: 40%;
+    left: 0;
+    top: 50%;
+    color: white;
+    font-size: 20px;
+    border-color:rgb(255, 153, 0) ;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style:dotted;
+}
+
+#news{
+    position: absolute;
+    width: 33%;
+    height: 40%;
+    left: 33%;
+    top: 50%;
+    color:rgb(255, 153, 0) ;
+    font-size: 20px;
+    text-align: center;
+    border-color:white ;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style:dotted;
+}
+
+#version{
+    position: absolute;
+    width: 33%;
+    height: 40%;
+    left: 67%;
+    top: 50%;
+    color:white ;
+    font-size: 20px;
+    text-align: center;
+    border-color:rgb(255, 153, 0) ;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style:dotted;
 }
