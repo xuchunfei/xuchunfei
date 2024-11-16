@@ -28,8 +28,7 @@ body{
 }
 
 #menu li{
-    display: block;
-    float: left;
+    display: inline-block;
     position:relative;
     margin-left: 30px;
     border-style:solid;
