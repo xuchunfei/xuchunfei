@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>飞哥的音乐空间</title>
     <link rel="stylesheet" href="./css/music.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/music.js"></script>
 </head>
 <body>
+
+    <div id="content">
+        <ul id="menu">
+            <li><a href="./index.html" title="进入"><span>首页</span></a></li>
+            <li><a href="./resume.html" title="进入"><span>个人简历</span></a></li>
+            <li><a href="./music.html" title="进入"><span>音乐作品</span></a></li>
+            <li><a href="./video.html" title="进入"><span>视频作品</span></a></li>
+            <li><a href="https://user.qzone.qq.com/2367347407?source=aiostar" title="进入"><span>抽象空间</span></a></li>
+            <li><a href="./picture.html" title="进入"><span>图片空间</span></a></li>
+            <li><a href="./link.html" title="进入"><span>友情链接</span></a></li>
+            <li><a href="./film.html" title="进入"><span>推荐电影</span></a></li>
+            <li><a href="./book.html" title="进入"><span>推荐书籍</span></a></li>
+        </ul>
+    </div>
 
     <div id="music">
     <table>
@@ -15,21 +31,30 @@
             <img src="./resource/东百.png" alt="" id="dongbai_qu">
         </td>
         <td>
-            <a href="dongbai.html" id="db">东百</a>
+            <a href="dongbai.html" id="db" title="我要洗耳恭听!">东百</a>
         </td>
     </tr>
         <tr>
             <td> <img src="./resource/孙开牛逼.png" alt="" id="sunkai_qu"></td>
-            <td><a href="./sunkainiubi.html" id="sk">孙开牛逼</a></td>
+            <td><a href="./sunkainiubi.html" id="sk" title="我要洗耳恭听!">孙开牛逼</a></td>
         </tr>
         <tr>
             <td></td>
-            <td><a href="" id="sk">射雕（制作中，敬请期待！）</a></td>
+            <td><a href="" id="sk" onclick="buttomClick_1()">射雕</a></td>
         </tr>
         <tr>
             <td></td>
-            <td><a href="" id="sk">网吧大神（制作中，敬请期待！）</a></td>
+            <td><a href="" id="sk" onclick="buttomClick_1()">网吧大神</a></td>
         </tr>
     </div>
+
+    <footer>
+        <table id="foot">
+            <tr><td>copyright@徐春飞2024</td></tr>
+            <tr><td>QQ：2367347407</td></tr>
+            <tr><td>github：xuchunfei</td></tr>
+        </table>
+    </footer>
+    
 </body>
 </html>

@@ -2,17 +2,23 @@ body{
     background-image: url(../resource/pno.jpeg);
     background-size: auto;
 }
-table{
+
+#music table{
     margin: 0px auto;
-    border-collapse: separate;
-    border-spacing: 40px;
+
 }
+
 #music a{
     font-size: 50px;
     text-decoration: none;
     color: rgb(146, 182, 213);
     font-family: "楷体";
 }
+#music a:hover{
+    color: gold;
+}
+
+
 #dongbai_qu{
     border-radius: 50px;
 }
@@ -21,4 +27,12 @@ table{
     height: 60px;
     margin: 0;
     padding: 0;
+}
+
+#foot{
+    position: fixed;
+    font-size: 15px;
+    bottom: 0;
+    color:rgb(255, 153, 0) ;
+    right: 0;
 }

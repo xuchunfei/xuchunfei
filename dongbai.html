@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="./css/dbcss.css">
+<link rel="stylesheet" href="./css/player.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>东百-详情</title>
+    <title>东百</title>
+    <link rel="stylesheet" href="./css/public.css">
 </head>
 <body>
-    <audio controls>
-        <source src="./resource/东百.mp3">
-    </audio>
-    
+    <audio src="./resource/东百.mp3" controls></audio>
+    <img src="./resource/东百.png" id="qu">
+    <div id="drill_1"></div>
+    <img src="./resource/dongbai_tu.png" id="tu">
+    <div id="drill_2"></div>
     <div class="container">
-        <ul class="lrc-box"></ul>
+        <ul class="wordList">
+        </ul>
     </div>
-
 </body>
+
+<footer>
+    <table id="foot">
+        <tr><td>copyright@徐春飞2024</td></tr>
+        <tr><td>QQ：2367347407</td></tr>
+        <tr><td>github：xuchunfei</td></tr>
+    </table>
+</footer>
+<script src="./js/db_data.js"></script>
+<script src="./js/player.js"></script>
 </html>

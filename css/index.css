@@ -12,47 +12,6 @@ body{
     background-color: black;
 }
 
-#content{
-    text-align: center;
-    width: 100%;
-    background-color: rgb(255, 153, 0);
-    padding: 15px;
-}
-
-#menu{
-    list-style: none;
-    height: 40px;
-    position: relative;
-    font-family: "宋体";
-    display:inline-block;
-}
-
-#menu li{
-    display: inline-block;
-    position:relative;
-    margin-left: 30px;
-    border-style:solid;
-    border-width: 2px;
-    border-color: white;
-}
-#menu li a{
-    display: block;
-    float: left;
-    height: 40px;
-    line-height: 33px;
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#menu li a:hover{
-background-color: white;
-}
-
-
-
 #table_2{
     width: 100%;
     text-align: center;
@@ -88,7 +47,7 @@ footer{
     font-size: 15px;
     bottom: 0;
     color:rgb(255, 153, 0) ;
-    text-align: center;
+    right: 0;
 }
 
 marquee{
@@ -110,12 +69,19 @@ marquee{
     border-width: 5px;
     border-style:dotted;
 }
+#intro ol{
+    text-indent: 2em;
+}
+
+#intro p{
+    text-align: center;
+}
 
 #news{
     position: absolute;
     width: 33%;
     height: 40%;
-    left: 33%;
+    left: 33.5%;
     top: 50%;
     color:rgb(255, 153, 0) ;
     font-size: 20px;

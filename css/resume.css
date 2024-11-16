@@ -5,7 +5,7 @@
     z-index: -1;
 }
 img{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     border-radius: 15px;
@@ -43,4 +43,5 @@ table{
 }
 #self{
     font-size: 20px;
+    text-indent: 2em;
 }
