@@ -5,7 +5,7 @@ if (pwd == "admin"){
     alert("欢迎访问徐春飞的个人简历！");}
 else{
     alert("密码错误");
-    window.history.back();
+    location.href="http://xuchunfei.github.io/xuchunfei"
 };
 }
 
