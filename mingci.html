@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>生成A4格式Word文档</title>
+    <style>
+        /* A4尺寸样式 */
+        .a4-container {
+            width: 21cm;
+            height: 29.7cm;
+            margin: 0 auto;
+            padding: 2cm;
+            box-sizing: border-box;
+            background-color: white;
+            page-break-after: always;
+        }
+
+        /* 网格布局 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 20px;
+            height: 100%;
+        }
+
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            text-align: center;
+            break-inside: avoid;
+        }
+
+        button {
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="generateDocument()">生成并下载Word文档</button>
+
+    <script>
+        // 原始数据列表
+        const originalList = [
+            "元素1", "元素2", "元素3", "元素4", "元素5",
+            "元素6", "元素7", "元素8", "元素9", "元素10",
+            "元素11", "元素12", "元素13", "元素14", "元素15",
+            "元素16", "元素17", "元素18", "元素19", "元素20"
+        ];
+
+        // 生成随机元素
+        function getRandomElements(list, count) {
+            const shuffled = [...list].sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        // 创建A4内容
+        function createA4Content(elements) {
+            const container = document.createElement('div');
+            container.className = 'a4-container';
+            
+            const grid = document.createElement('div');
+            grid.className = 'grid-container';
+            
+            elements.forEach(element => {
+                const item = document.createElement('div');
+                item.className = 'grid-item';
+                item.textContent = element;
+                grid.appendChild(item);
+            });
+            
+            container.appendChild(grid);
+            return container;
+        }
+
+        // 生成并下载Word文档
+        function generateDocument() {
+            // 获取随机10个元素
+            const selectedElements = getRandomElements(originalList, 10);
+            
+            // 创建临时容器
+            const tempDiv = document.createElement('div');
+            
+            // 添加A4内容
+            tempDiv.appendChild(createA4Content(selectedElements));
+            
+            // 创建包含样式的完整HTML
+            const htmlContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <style>
+                        ${document.querySelector('style').innerHTML}
+                    </style>
+                </head>
+                <body>
+                    ${tempDiv.innerHTML}
+                </body>
+                </html>
+            `;
+
+            // 创建Blob并下载
+            const blob = new Blob([htmlContent], { type: 'application/msword' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = '随机元素列表.doc';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
